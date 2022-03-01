@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function getconfirm() {
+        var qr = confirm("Do you want to continue");
+        if (qr == "true") {
+          document.write("User wants to continue");
+        } else {
+          document.write("User wants not to continue");
+        }
+      }
+      function getval() {
+        var name = prompt("Enter your name");
+        document.write("Hi " + name + "Welcome to javascript");
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <input type="button" onclick="getconfirm()" value="click" />
+      <input type="button" onclick="getval()" value="click to enter" />
+    </form>
+  </body>
+</html>

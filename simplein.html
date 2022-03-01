@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var p,r,t;
+        function calculate()
+        {
+         p = parseFloat(document.getElementById("firstnumber").value)
+         r = parseFloat(document.getElementById("secondNumber").value)
+         t = parseFloat(document.getElementById("thirdNumber").value)
+         document.getElementById("result").innerHTML = ((p*r*t)/100)
+        }
+        </script>
+        
+        
+</head>
+<body>
+    <form>
+        Principle amount: <input type="text" id="firstnumber"><br>
+        Rate: <input type="text" id="secondNumber"><br>
+        Time: <input type="text" id="thirdNumber"><br>
+        <input type="button" onClick="calculate()" Value="OK" >
+        </form>
+        The simple interest is:
+        <span id="result"> 
+</body>
+</html>

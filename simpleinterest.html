@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var p, r, t;
+      function calculate() {
+        p = document.getElementById("Pr").value;
+        r = document.getElementById("R").value;
+        t = document.getElementById("T").value;
+        si.value = (p * r * t) / 100;
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      Principle Amount <input type="text" id="Pr" /> <br />
+      Rate <input type="text" id="R" /> <br />
+      Time <input type="text" id="T" /> <br />
+      <input type="button" onclick="calculate()" value="OK" />
+      <input type="text" id="si" />
+    </form>
+  </body>
+</html>
